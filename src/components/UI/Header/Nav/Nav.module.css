@@ -1,7 +1,16 @@
-.Nav{
-  background: #f77134;
+.Nav {
+  background: #232524;
+  border-bottom: 1px solid #b3b3b3;
   height: 80px;
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
+}
+
+@media (min-width: 800px) {
+  .Nav {
+    background: #f77134;
+  }
+
+
 }

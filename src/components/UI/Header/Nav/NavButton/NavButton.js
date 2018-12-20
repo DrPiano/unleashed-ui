@@ -6,8 +6,10 @@ import shareIcon from '../../../../../assets/icomoon/SVG/share.svg'
 const NavButton = (props) => {
   let icon = null;
   let mid = null;
+  let menuButton = null;
   if(props.wichOne === 1){
     icon = menuIcon;
+    menuButton = classes.MenuButton;
   } else if (props.wichOne === 2){
     icon = searchIcon;
     mid = classes.MiddleButton;
@@ -19,7 +21,7 @@ const NavButton = (props) => {
 
   return (
     <div className={classes.Container}>
-      <button className={[classes.NavButton, mid].join(' ')}>
+      <button className={[classes.NavButton, mid, menuButton].join(' ')}>
         <img
           src={icon}
           className={classes.Icon}

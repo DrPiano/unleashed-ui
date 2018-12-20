@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import Nav from './components/UI/Header/Nav/Nav';
-import NavButton from './components/UI/Header/Nav/NavButton/NavButton';
+import Layout from './containers/Layout/Layout';
+
 class App extends Component {
+  state = {
+    isMobile: false
+  };
+
   render() {
     return (
       <div className="App">
-        <Nav />
+        <Layout />
       </div>
     );
   }

@@ -1,32 +1,47 @@
+/* Mobile style */
 .Container{
   display: flex;
-  background: tomato;
 }
 
 .NavButton {
+  display: none;
+}
+
+.MenuButton {
   border: none;
-  background: #f77134;
-  color: white;
-  width: 250px;
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.NavButtonText{
-  margin-left: 10px;
-  vertical-align: middle;
+  background: none;
+  width: 100px;
+  display: block;
 }
 
-.NavButton:active {
-  background: tomato;
-}
-
-.MiddleButton {
-  border-left: 2px solid #db5d37;
-  border-right: 2px solid #db5d37;
-}
 .Icon {
   vertical-align: middle;
   height: 40px;
   width: 40px;
+}
+
+@media (min-width: 800px) {
+  .NavButton {
+    border: none;
+    background: #f77134;
+    color: white;
+    width: 250px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+  }
+  .NavButtonText{
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  .NavButton:active {
+    background: tomato;
+  }
+
+  .MiddleButton {
+    border-left: 2px solid #db5d37;
+    border-right: 2px solid #db5d37;
+  }
 }
