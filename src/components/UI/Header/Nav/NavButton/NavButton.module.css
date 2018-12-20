@@ -1,0 +1,32 @@
+.Container{
+  display: flex;
+  background: tomato;
+}
+
+.NavButton {
+  border: none;
+  background: #f77134;
+  color: white;
+  width: 250px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.NavButtonText{
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.NavButton:active {
+  background: tomato;
+}
+
+.MiddleButton {
+  border-left: 2px solid #db5d37;
+  border-right: 2px solid #db5d37;
+}
+.Icon {
+  vertical-align: middle;
+  height: 40px;
+  width: 40px;
+}
