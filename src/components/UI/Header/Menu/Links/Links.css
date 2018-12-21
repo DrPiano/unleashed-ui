@@ -1,0 +1,31 @@
+.container {
+
+}
+
+.link-container {
+  color: white;
+  list-style-type: none;
+  padding: 0 15px;
+}
+
+.link-container li {
+  border-bottom: 1px solid #dcdcdc;
+  font-size: 1.2em;
+  padding: 20px 0;
+}
+.link-container li:last-child {
+  border: none;
+}
+
+.link-container li a {
+  color: #dcdcdc;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.link-container li a img {
+  height: 12px;
+  width: 12px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
