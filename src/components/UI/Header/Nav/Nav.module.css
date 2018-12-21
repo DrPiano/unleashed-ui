@@ -10,6 +10,7 @@
 @media (min-width: 800px) {
   .Nav {
     background: #f77134;
+    border-bottom: none;
   }
 
 

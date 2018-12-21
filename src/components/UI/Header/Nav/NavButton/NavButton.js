@@ -3,31 +3,38 @@ import classes from './NavButton.module.css';
 import menuIcon from '../../../../../assets/icomoon/SVG/menu.svg'
 import searchIcon from '../../../../../assets/icomoon/SVG/search.svg'
 import shareIcon from '../../../../../assets/icomoon/SVG/share.svg'
+import Button from '@material-ui/core/Button';
+
 const NavButton = (props) => {
   let icon = null;
-  let mid = null;
-  let menuButton = null;
+  let wichButton = null;
+  let hide = null;
   if(props.wichOne === 1){
     icon = menuIcon;
-    menuButton = classes.MenuButton;
+    wichButton = classes.MenuButton;
   } else if (props.wichOne === 2){
     icon = searchIcon;
-    mid = classes.MiddleButton;
+    wichButton = classes.SearchButton;
+    hide = classes.Hide;
   } else if (props.wichOne === 3){
     icon = shareIcon;
+    wichButton = classes.ShareButton;
+    hide = classes.Hide;
   } else {
     icon = null;
   }
 
   return (
-    <div className={classes.Container}>
-      <button className={[classes.NavButton, mid, menuButton].join(' ')}>
-        <img
-          src={icon}
-          className={classes.Icon}
-          alt="icon"/>
-        <span className={classes.NavButtonText}>{props.whatSay}</span>
-      </button>
+    <div className={[classes.Container, hide].join(' ')}>
+      <Button>
+        <div className={[classes.NavButton, wichButton].join(' ')}>
+          <img
+            src={icon}
+            className={classes.Icon}
+            alt="icon"/>
+          <span className={classes.NavButtonText}>{props.whatSay}</span>
+        </div>
+      </Button>
     </div>
     );
 }

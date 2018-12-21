@@ -1,9 +1,14 @@
 /* Mobile style */
 .Container{
   display: flex;
+  /* display: none; */
 }
 
 .NavButton {
+  display: none;
+}
+
+.NavButtonText{
   display: none;
 }
 
@@ -20,6 +25,10 @@
   width: 40px;
 }
 
+.Hide {
+  display: none;
+}
+
 @media (min-width: 800px) {
   .NavButton {
     border: none;
@@ -29,19 +38,31 @@
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
-    display: block;
+    display: flex;
+    height: 100%;
+    align-items: center;
   }
+
   .NavButtonText{
     margin-left: 10px;
     vertical-align: middle;
+    display: inline-block;
   }
 
   .NavButton:active {
     background: tomato;
   }
 
-  .MiddleButton {
+  .SearchButton {
     border-left: 2px solid #db5d37;
     border-right: 2px solid #db5d37;
+  }
+
+  .Icon {
+    margin-left: 40px;
+  }
+
+  .Hide{
+    display: flex;
   }
 }

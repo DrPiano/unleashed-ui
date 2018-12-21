@@ -2,3 +2,8 @@
   margin-right: auto;
   padding-left: 25px;
 }
+@media (min-width: 800px) {
+  .Logo {
+    display: none;
+  }
+}
