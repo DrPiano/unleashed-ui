@@ -24,6 +24,10 @@
   height: 40px;
   width: 40px;
 }
+.closeIcon {
+  height: 20px;
+  width: 20px;
+}
 
 .Hide {
   display: none;

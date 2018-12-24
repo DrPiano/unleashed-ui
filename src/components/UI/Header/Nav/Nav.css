@@ -1,10 +1,17 @@
 .Nav {
   background: #232524;
   border-bottom: 1px solid #b3b3b3;
-  height: 40px;
+  height: 55px;
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.menuIsOpen {
+  border-bottom: none;
 }
 
 @media (min-width: 800px) {
