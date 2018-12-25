@@ -4,7 +4,7 @@ import classes from './Layout.module.css';
 import Menu from '../../components/UI/Header/Menu/Menu';
 class Layout extends Component {
   state = {
-    isMobile: false,
+    isMobile: true,
     menuIsOpen: false
   };
 
@@ -13,10 +13,17 @@ class Layout extends Component {
       return {menuIsOpen: !prevState.menuIsOpen};
     });
   };
-
+  componentDidMount(){         //Need to figure out how to evaluate this actively on resize.
+    let browserWidth = window.innerWidth;
+    if(browserWidth >= 800){
+      this.setState((prevState) => {
+        return { isMobile: !prevState.isMobile};
+      });
+    }
+  }
   render() {
     let menu;
-    if ( this.state.menuIsOpen ){
+    if ( this.state.menuIsOpen && this.state.isMobile ){
       menu = <Menu />;
     } else {
       menu = null;
@@ -24,6 +31,7 @@ class Layout extends Component {
     return (
       <div className={classes.Layout}>
         <Nav
+          layout={this.state.isMobile}
           isMenuOpen={this.state.menuIsOpen}
           menuBtnClickedHandler={this.menuToggleClickHandler}/>
         {menu}

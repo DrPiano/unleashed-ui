@@ -6,12 +6,12 @@ import StartEmail from '../../StartEmail/StartEmail';
 import SalesEmail from '../../SalesEmail/SalesEmail';
 import SocialIcons from '../../SocialIcons/SocialIcons';
 
-import './Menu.css';
+import classes from './Menu.module.css';
 
 const Menu = () => {
   return (
       <>
-        <div class="menu">
+        <div class={classes.menu}>
             <SearchBar />
             <Links />
             <div>

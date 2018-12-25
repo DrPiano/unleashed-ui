@@ -1,25 +1,24 @@
 /* Mobile style */
-.Container{
+.container{
   display: flex;
-  /* display: none; */
 }
 
-.NavButton {
+.navButton {
   display: none;
 }
 
-.NavButtonText{
+.navButtonText{
   display: none;
 }
 
-.MenuButton {
+.menuButton {
   border: none;
   background: none;
   width: 100px;
   display: block;
 }
 
-.Icon {
+.icon {
   vertical-align: middle;
   height: 40px;
   width: 40px;
@@ -29,12 +28,12 @@
   width: 20px;
 }
 
-.Hide {
+.hide {
   display: none;
 }
 
 @media (min-width: 800px) {
-  .NavButton {
+  .navButton {
     border: none;
     background: #f77134;
     color: white;
@@ -47,26 +46,26 @@
     align-items: center;
   }
 
-  .NavButtonText{
+  .navButtonText{
     margin-left: 10px;
     vertical-align: middle;
     display: inline-block;
   }
 
-  .NavButton:active {
+  .navButton:active {
     background: tomato;
   }
 
-  .SearchButton {
+  .searchButton {
     border-left: 2px solid #db5d37;
     border-right: 2px solid #db5d37;
   }
 
-  .Icon {
+  .icon {
     margin-left: 40px;
   }
 
-  .Hide{
+  .hide{
     display: flex;
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import './PhoneNumber.css';
+import classes from './PhoneNumber.module.css';
 
-const PhoneNumber = () => <div class="phone-number"><p>410-864-8980</p></div>;
+const PhoneNumber = () => <div class={classes.phoneNumber}><p>410-864-8980</p></div>;
 
 export default PhoneNumber;

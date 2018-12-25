@@ -8,6 +8,12 @@ const Logo = (props) =>{
   if(props.menuIsOpen){
     whichLogo = secondLogo;
   }
-  return <img src={whichLogo} className={classes.Logo} alt="logo"/>;
+  return (
+    <div class={classes.container}>
+      <div class={classes.innerContainer} >
+        <img src={whichLogo} className={classes.logo} alt="logo"/>
+      </div>
+    </div>
+    );
 }
 export default Logo;

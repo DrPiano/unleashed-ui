@@ -1,10 +1,10 @@
-.search-bar {
+.searchBar {
   width: 93%;
   margin: auto;
   margin-top: 30px;
 }
 
-.search-input {
+.searchInput {
   width: 80%;
   height: 30px;
   border: 2px solid #264c7e;
@@ -19,7 +19,7 @@
   color: #264c7e;
   font-size: 12px;
 }
-.icon-container{
+.iconContainer{
   display: inline-block;
   background: #264c7e;
   border: 3px solid #264c7e;
@@ -30,7 +30,7 @@
   width: 50px;
   cursor: pointer;
 }
-.search-icon {
+.searchIcon {
   height: 22px;
   width: 22px;
   margin-top: 5px;

@@ -1,11 +1,11 @@
 import React from 'react';
 import chevronRight from '../../../../../assets/icomoon/SVG/chevron-right.svg';
-import './Links.css';
+import classes from './Links.module.css';
 
 const Links = () => {
   return (
-    <div className="container">
-      <ul className="link-container">
+    <div className={classes.container}>
+      <ul className={classes.linkContainer}>
         <li>
           <a href="#">
             Services

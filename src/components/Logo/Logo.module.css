@@ -1,9 +1,26 @@
-.Logo{
-  margin-right: auto;
-  padding-left: 25px;
+.container{
+    margin-right: auto;
+    padding-left: 25px;
+    display: flex;
+    filter: drop-shadow(5px 5px 4px rgba(20, 20, 20, 0.3));
 }
+.innerContainer{
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 800px) {
-  .Logo {
-    display: none;
+  .container {
+    padding: 0;
+  }
+
+  .innerContainer {
+    background: #fff;
+    -webkit-clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 86%);
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+    padding: 0;
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
   }
 }

@@ -4,15 +4,15 @@ import instagram from '../../../assets/icomoon/SVG/instagram.svg';
 import twitter from '../../../assets/icomoon/SVG/twitter.svg';
 import linkedin from '../../../assets/icomoon/SVG/linkedin.svg';
 
-import './SocialIcons.css';
+import classes from './SocialIcons.module.css';
 
 const SocialIcons = () => {
   return(
-        <div class="social-icons-container">
-          <img src={instagram} alt="instagram icon" className="social-icon"/>
-          <img src={facebook} alt="facebook icon" className="social-icon"/>
-          <img src={linkedin} alt="linkedin icon" className="social-icon"/>
-          <img src={twitter} alt="twitter icon" className="social-icon"/>
+        <div class={classes.container}>
+          <img src={instagram} alt="instagram icon"/>
+          <img src={facebook} alt="facebook icon"/>
+          <img src={linkedin} alt="linkedin icon"/>
+          <img src={twitter} alt="twitter icon"/>
         </div>
   );
 }

@@ -1,0 +1,41 @@
+.nav {
+  background: #232524;
+  border-bottom: 1px solid #b3b3b3;
+  height: 55px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.menuIsOpen {
+  border-bottom: none;
+}
+
+.shadowFold {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .nav {
+    background: #f77134;
+    border-bottom: none;
+    height: 80px;
+  }
+
+  .shadowFold {
+    background: #c7441a;
+    display: block;
+    width: 100px;
+    height: 80px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    /* z-index: 1000; */
+  }
+
+}
