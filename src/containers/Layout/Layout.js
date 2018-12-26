@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from '../../components/UI/Header/Nav/Nav';
 import classes from './Layout.module.css';
 import Menu from '../../components/UI/Header/Menu/Menu';
+import DesktopMenu from '../../components/UI/Header/Menu/DesktopMenu/DesktopMenu';
 class Layout extends Component {
   state = {
     isMobile: true,
@@ -25,6 +26,8 @@ class Layout extends Component {
     let menu;
     if ( this.state.menuIsOpen && this.state.isMobile ){
       menu = <Menu />;
+    } else if (this.state.menuIsOpen && !this.state.isMobile) {
+      menu = <DesktopMenu />;
     } else {
       menu = null;
     }

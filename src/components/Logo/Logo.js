@@ -5,12 +5,16 @@ import classes from './Logo.module.css';
 
 const Logo = (props) =>{
   let whichLogo = logo;
+  let styles;
   if(props.menuIsOpen){
     whichLogo = secondLogo;
+    styles = [classes.innerContainer,classes.largeLogo].join(' ');
+  } else {
+    styles = classes.innerContainer;
   }
   return (
     <div class={classes.container}>
-      <div class={classes.innerContainer} >
+      <div class={styles} >
         <img src={whichLogo} className={classes.logo} alt="logo"/>
       </div>
     </div>

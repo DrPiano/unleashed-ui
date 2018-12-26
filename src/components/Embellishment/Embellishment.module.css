@@ -1,0 +1,46 @@
+.container{
+  width: 100%;
+  margin-top: 100px;
+  margin-left: -15px;
+}
+.wrapper1,
+.wrapper2,
+.wrapper3 {
+  height: 30px;
+  width: 100%;
+}
+
+.line1,
+.line2,
+.line3 {
+  background: #00335a;
+  height: 15px;
+  display: inline-block;
+}
+
+.wrapper1 .line1 {
+  width: 51%;
+}
+
+.wrapper1 .line2 {
+  width: 28%;
+  margin-left: 20px;
+}
+
+.wrapper2 .line1{
+  width: 72%;
+}
+
+.wrapper3 .line1 {
+  width: 29%;
+}
+
+.wrapper3 .line2 {
+  width: 5%;
+  margin-left: 10px;
+}
+
+.wrapper3 .line3 {
+  width: 15%;
+  margin-left: 10px;
+}

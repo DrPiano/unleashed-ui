@@ -16,11 +16,20 @@
 
   .innerContainer {
     background: #fff;
-    -webkit-clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 86%);
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
     padding: 0;
     width: 180px;
     height: 180px;
+    transition: height .25s, width .25s;
     margin-top: 10px;
+  }
+
+  .innerContainer.largeLogo {
+    -webkit-clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 86%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    width: 400px;
+    height: 380px;
+    transition: height .25s, width .25s;
   }
 }

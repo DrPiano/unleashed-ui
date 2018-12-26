@@ -5,13 +5,15 @@ import Logo from '../../../Logo/Logo';
 
 const Nav = (props) => {
   let navStyle = [classes.nav];
+  let shadowStyle = [classes.shadowFold];
   if(props.isMenuOpen ){
     navStyle = [classes.nav, classes.menuIsOpen].join(' ');
+    shadowStyle = [classes.shadowFold, classes.largeShadow].join(' ');
   }
 
   return (
     <div className={navStyle}>
-      <div class={classes.shadowFold}></div>
+      <div class={shadowStyle}></div>
       <Logo menuIsOpen={props.isMenuOpen}/>
       <NavButton
         isMobile={props.layout}

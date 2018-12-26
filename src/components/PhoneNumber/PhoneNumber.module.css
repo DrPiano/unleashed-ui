@@ -1,0 +1,16 @@
+.phoneNumber {
+  color: #fcd92d;
+  padding: 0 15px;
+  margin-top: -10px;
+}
+
+/* Contextual Variations  */
+/* Desktop Menu*/
+.phoneNumber.desktopDisplay {
+  color: #fff;
+  font-size: 23px;
+  font-weight: lighter;
+}
+.phoneNumber.desktopDisplay span {
+  font-weight: bold;
+}

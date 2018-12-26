@@ -1,10 +1,10 @@
 import React from 'react';
-import SearchBar from '../../SearchBar/SearchBar';
+import SearchBar from '../../../SearchBar/SearchBar';
 import Links from './Links/Links';
-import PhoneNumber from '../../PhoneNumber/PhoneNumber';
-import StartEmail from '../../StartEmail/StartEmail';
-import SalesEmail from '../../SalesEmail/SalesEmail';
-import SocialIcons from '../../SocialIcons/SocialIcons';
+import PhoneNumber from '../../../PhoneNumber/PhoneNumber';
+import StartEmail from '../../../StartEmail/StartEmail';
+import SalesEmail from '../../../SalesEmail/SalesEmail';
+import SocialIcons from '../../../SocialIcons/SocialIcons';
 
 import classes from './Menu.module.css';
 

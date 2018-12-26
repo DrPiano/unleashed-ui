@@ -1,0 +1,18 @@
+.startEmail {
+  color: #fcd92d;
+  padding: 0 15px;
+  margin-top: 20px;
+}
+
+/* Contextual Variations */
+/* Desktop Menu */
+
+.startEmail.desktopDisplay{
+  color: #fff;
+  font-size: 23px;
+  font-weight: lighter;
+}
+
+.startEmail.desktopDisplay span{
+  font-weight: bold;
+}

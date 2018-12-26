@@ -29,13 +29,18 @@
     background: #c7441a;
     display: block;
     width: 100px;
+    transition: width .25s;
     height: 80px;
     -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
     clip-path: polygon(0 0, 100% 0, 0 100%);
     position: absolute;
     top: 0px;
     left: 0;
-    /* z-index: 1000; */
+  }
+
+  .shadowFold.largeShadow{
+    width: 222px;
+    transition: width .25s;
   }
 
 }

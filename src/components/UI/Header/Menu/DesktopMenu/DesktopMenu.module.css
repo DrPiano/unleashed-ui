@@ -1,0 +1,17 @@
+.desktopMenu {
+  background: #014785;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 100vh;
+  transition: height .25s, width .25s;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  border-bottom: 2px solid #f77134;
+}
+
+.leftSide {
+  padding: 290px 15px 0 15px;
+}
